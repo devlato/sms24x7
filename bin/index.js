@@ -43,7 +43,7 @@ printHelp = function(showUnsupportedCommand) {
       	'                    --password    Account password',
       	'                    --phone       Recipient phone number',
       	'                    --message     Message text',
-      	'                   --sender      Text string to show instead of server phone number',
+      	'                    --sender      Text string to show instead of server phone number',
       	'',
       	'        help    Show this help and exit',
       	''

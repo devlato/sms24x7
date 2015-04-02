@@ -1,6 +1,6 @@
 {
   "name":           "sms24x7-client",
-  "version":        "0.0.3",
+  "version":        "0.0.4",
   "description":    "Send text messages via SMS using sms24x7.ru",
   "homepage":       "https://github.com/devlato/sms24x7",
   "readmeFilename": "README.md",
