@@ -1,5 +1,5 @@
 {
-  "name":           "sms24x7",
+  "name":           "sms24x7-client",
   "version":        "0.0.1",
   "description":    "Send text messages via SMS using sms24x7.ru",
   "homepage":       "https://github.com/devlato/sms24x7",
@@ -8,7 +8,7 @@
   "keywords":       ["sms", "text", "messages", "api", "24x7", "send", "client"],
   "preferGlobal":   true,
   "bin": {
-    "sms24x7":         "bin/index.js",
+    "sms24x7-client":  "bin/index.js",
     "main":            "lib/index.js"
   },
   "repository": {

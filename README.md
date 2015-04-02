@@ -1,4 +1,4 @@
-# sms24x7
+# sms24x7-client
 
 A simple util/module that allows to send text messages via sms24x7.ru SMS service. 
 
