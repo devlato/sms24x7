@@ -7,13 +7,13 @@ It contains library and cmd util.
 
 ## INSTALLATION
 ```sh
-npm install -g sms24x7
+npm install -g sms24x7-client
 ```
 
 
 ## USAGE
 ```sh
-sms24x7 --email=your-account-email@example.com --password=your-account-password --phone=receiver-phone --message=your-text-message [--sender=sender-name-string]
+sms24x7-client --email=your-account-email@example.com --password=your-account-password --phone=receiver-phone --message=your-text-message [--sender=sender-name-string]
 ```
 
 
@@ -22,7 +22,7 @@ sms24x7 --email=your-account-email@example.com --password=your-account-password 
 var SmsSender, smsSender, Minimist, cmdArgs; 
 
 
-SmsSender = require('../lib'); 
+SmsSender = require('sms24x7-client'); 
 Minimist  = require('minimist'); 
 
 
