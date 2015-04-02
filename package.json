@@ -5,26 +5,30 @@
   "homepage":       "https://github.com/devlato/sms24x7",
   "readmeFilename": "README.md",
   "license":        "MIT",
-  "keywords": ["sms", "text", "messages", "api", "24x7", "send", "client"],
+  "keywords":       ["sms", "text", "messages", "api", "24x7", "send", "client"],
+  "preferGlobal":   true,
   "bin": {
-    "sms24x7": "bin/index.js",
-    "main":    "lib/index.js"
+    "sms24x7":         "bin/index.js",
+    "main":            "lib/index.js"
   },
   "repository": {
-    "type":    "git",
-    "url":     "https://github.com/devlato/sms24x7"
+    "type":            "git",
+    "url":             "https://github.com/devlato/sms24x7"
   },
   "author": {
-    "name":    "devlato",
-    "email":   "npm@devlato.com"
+    "name":            "devlato",
+    "email":           "npm@devlato.com"
   },
   "dependencies": {
-    "lodash":  ">= 3.3.1"
+    "lodash":          ">= 3.6.0",
+    "q":               ">= 1.2.0",
+    "request-promise": ">= 0.4.1",
+    "minimist":        ">= 1.1.1"
   },
   "bugs": {
-    "url":     "https://github.com/devlato/sms24x7/issues"
+    "url":             "https://github.com/devlato/sms24x7/issues"
   },
   "engines": {
-    "node":    ">= 0.12.0"
+    "node":            ">= 0.12.0"
   }
 }
