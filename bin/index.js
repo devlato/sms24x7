@@ -2,18 +2,18 @@
 
 
 
-'use strict'; 
+'use strict';
 
 
 
 
-var SmsSender, smsSender, Minimist, cmdArgs, command, printHelp; 
+var SmsSender, smsSender, Minimist, cmdArgs, command, printHelp;
 
 
 
 
-SmsSender = require('../lib'); 
-Minimist  = require('minimist'); 
+SmsSender = require('../lib');
+Minimist  = require('minimist');
 
 
 
@@ -29,7 +29,7 @@ printHelp = function(showUnsupportedCommand) {
 		lines = lines.concat([
 			'',
 			'    Unsupported command',
-		]); 
+		]);
 	}
 
 	lines = lines.concat([
@@ -63,22 +63,22 @@ smsSender = new SmsSender({
 		email:    cmdArgs.email,
 		password: cmdArgs.password
 	}
-}); 
+});
 
 
 switch (command) {
-	case 'send': 
+	case 'send':
 		smsSender
 			.send(cmdArgs.phone, cmdArgs.message, cmdArgs.sender)
 			.then(function(response) {
-				console.log(response); 
+				console.log(JSON.stringify(response));
 			})
 			.catch(function(error) {
-				console.log(error);
-			}); 
+				console.log(JSON.stringify(response));
+			});
 		break;
 
-	case 'help': 
+	case 'help':
 		printHelp(false);
 		break;
 
